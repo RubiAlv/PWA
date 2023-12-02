@@ -3,10 +3,10 @@ self.addEventListener('install', (event) => {
       caches.open('mi-pwa-cache').then((cache) => {
         return cache.addAll([
           '/index.html',
-          '/views/mision.html',
-          '/css/mision.css',
-          '/imagenes/6.jpg',
-          'imagenes/7.jpg'
+          '/views',
+          '/css',
+          '/imagenes',
+          '/js'
           // Agrega aquí todos los archivos que quieres cachear
         ]);
       })
