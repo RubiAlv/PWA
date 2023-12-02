@@ -2,7 +2,7 @@ function guardar (){
     db.collection("usuario").add({
         nombre: document.getElementById("name").value,
         apellidos: document.getElementById("lastname").value,
-        correo: document.getElementById("name").value,
+        correo: document.getElementById("mail").value,
         contraseña: document.getElementById("password").value
     })
     .then((docRef) => {
