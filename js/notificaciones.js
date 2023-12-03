@@ -11,8 +11,4 @@ function mostrarNotificacion() {
     });
   }
 }
-
-// Llama a la función para mostrar la notificación cuando sea necesario
-// mostrarNotificacion();
-
   
