@@ -29,6 +29,16 @@ self.addEventListener('install', (event) => {
       caches.match(event.request).then((response) => {
         return response || fetch(event.request);
       })
+    );  
+  });
+
+  self.addEventListener('push', (event) => {
+    const options = {
+      body: 'Bienvenido a Cafeteria Oh lala',
+      icon: 'imagenes/not.jpg'
+    };
+  
+    event.waitUntil(
+      self.registration.showNotification('Hola', options)
     );
   });
-  
