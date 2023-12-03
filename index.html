@@ -55,7 +55,7 @@
          <div>
            <h2>¡Bienvenido!</h2>
 	   <p>Somos Cafetería Oh lala</p>
-	   <a href="productos.html" target="_blank" class="btnSlider">Ver más</a>
+	   <a href="productos.html" target="_blank" class="btnSlider" onclick="mostrarNotificacion()">Ver más</a>
 	 </div>
        </div>
      </li>
@@ -64,7 +64,7 @@
          <div>
            <h2>¡Bienvenido!</h2>
 	   <p>Somos Cafetería Oh lala</p>
-	   <a href="productos.html" target="_blank" class="btnSlider">Ver más</a>
+	   <a href="productos.html" target="_blank" class="btnSlider" onclick="mostrarNotificacion()">Ver más</a>
 	 </div>
        </div>
      </li>
@@ -73,7 +73,7 @@
          <div>
            <h2>¡Bienvenido!</h2>
 	   <p>Somos Cafetería Oh lala</p>
-	   <a href="productos.html" target="_blank" class="btnSlider">Ver más</a>
+	   <a href="productos.html" target="_blank" class="btnSlider" onclick="mostrarNotificacion()">Ver más</a>
 	 </div>
        </div>
      </li>
@@ -109,6 +109,17 @@
   </div>
 </div>
     </body>
+    <script src="/js/notificaciones.js"></script>
+    <script>
+      if ('Notification' in window && Notification.permission !== 'denied') {
+    // Solicita permisos
+    Notification.requestPermission().then((permission) => {
+      if (permission === 'granted') {
+        console.log('Permisos de notificación concedidos');
+      }
+    });
+  }
+    </script>
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js')
@@ -119,7 +130,5 @@
             console.log('Error al registrar el Service Worker:', error);
           });
       }
-    </script>
-    
-    
+    </script>    
 </html>
