@@ -1,3 +1,6 @@
+self.addEventListener('install', e=>{
+    console.log('Instalando SW');
+})
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
