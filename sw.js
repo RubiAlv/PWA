@@ -37,11 +37,6 @@ self.addEventListener('install', (event) => {
   });
 
 
-self.addEventListener('sync', e=>{
-    console.log('Tenemos conexión');
-    console.log(e);
-    console.log(e.tag);
-})
 
   self.addEventListener('push', (event) => {
     const options = {
