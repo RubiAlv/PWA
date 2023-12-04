@@ -14,6 +14,19 @@ self.addEventListener('install', (event) => {
           '/imagenes/img4.jpg',
           '/imagenes/img5.jpg',
           '/imagenes/logo.png',
+          '/imagenes/cafe_frio.jpg',
+          '/imagenes/capuccino.jpg',
+          '/imagenes/cupcake.jpg',
+          '/imagenes/frappe_brawnie.jpg',
+          '/imagenes/frappe_vainilla.jpg',
+          '/imagenes/mojito.jpg',
+          '/imagenes/not.jpg',
+          '/imagenes/pancake.jpg',
+          '/imagenes/pastel.jpg',
+          '/imagenes/red_Velvet.jpg',
+          '/imagenes/repartidor.jpg',
+          '/imagenes/smothi_mango.jpg',
+          '/imagenes/tarta_manzana.jpg',
           '/views/faqs.html',
           '/css/estilos.css',
           '/js/funciones.js',
@@ -23,7 +36,11 @@ self.addEventListener('install', (event) => {
           'imagenes/7.jpg',
           '/views/productos.html',
           '/css/login.css',
-          '/views/login.html'
+          '/views/login.html',
+            '/imagenes/icons/maskable_icon_x72.png',
+            '/imagenes/icons/maskable_icon_x96.png',
+            '/imagenes/icons/maskable_icon_x128.png',
+            '/imagenes/icons/maskable_icon_x512.png'
           // Agrega aquí todos los archivos que quieres cachear
         ]);
       })
