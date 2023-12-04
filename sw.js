@@ -4,6 +4,7 @@ self.addEventListener('install', (event) => {
       caches.open('mi-pwa-cache').then((cache) => {
         return cache.addAll([
           '/index.html',
+            '/manifest.json',
           '/css/est_productos.css',
           '/css/style.css',
           '/imagenes/img1.jpg',
