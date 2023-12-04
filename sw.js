@@ -30,6 +30,7 @@ self.addEventListener('install', (event) => {
           '/views/faqs.html',
           '/css/estilos.css',
           '/js/funciones.js',
+          '/js/notificaciones.js',
           '/views/mision.html',
           '/css/mision.css',
           '/imagenes/6.jpg',
@@ -37,9 +38,9 @@ self.addEventListener('install', (event) => {
           '/views/productos.html',
           '/css/login.css',
           '/views/login.html',
-            '/imagenes/icons/maskable_icon_x72.png',
-            '/imagenes/icons/maskable_icon_x96.png',
-            '/imagenes/icons/maskable_icon_x128.png',
+          '/imagenes/icons/maskable_icon_x72.png',
+           '/imagenes/icons/maskable_icon_x96.png',
+           '/imagenes/icons/maskable_icon_x128.png',
             '/imagenes/icons/maskable_icon_x512.png'
           // Agrega aquí todos los archivos que quieres cachear
         ]);
