@@ -36,9 +36,6 @@ self.addEventListener('install', (event) => {
     );  
   });
 
-self.addEventListener('activate', e=>{
-    console.log('SW: Activo y Controlara toda la aplicación');
-})
 
 self.addEventListener('sync', e=>{
     console.log('Tenemos conexión');
