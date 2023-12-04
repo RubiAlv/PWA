@@ -21,7 +21,10 @@ self.addEventListener('install', (event) => {
           '/views/mision.html',
           '/css/mision.css',
           '/imagenes/6.jpg',
-          'imagenes/7.jpg'
+          'imagenes/7.jpg',
+          '/views/productos.html',
+          '/css/login.css',
+          '/css/login.css'
           // Agrega aquí todos los archivos que quieres cachear
         ]);
       })
@@ -39,7 +42,7 @@ self.addEventListener('install', (event) => {
   self.addEventListener('push', (event) => {
     const options = {
       body: 'Bienvenido a Cafeteria Oh lala',
-      icon: 'imagenes/not.jpg'
+      icon: 'imagenes/logo.png'
     };
   
     event.waitUntil(
