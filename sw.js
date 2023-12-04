@@ -24,7 +24,7 @@ self.addEventListener('install', (event) => {
           'imagenes/7.jpg',
           '/views/productos.html',
           '/css/login.css',
-          '/css/login.css'
+          '/views/login.html'
           // Agrega aquí todos los archivos que quieres cachear
         ]);
       })
